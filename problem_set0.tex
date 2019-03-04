@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{csc}
+
+% Document metadata
+\title{CSC 165 - Problem Set 0}
+\author{By Parth Patel}
+\date{\today}
+
+
+% Document starts here
+\begin{document}
+\maketitle
+
+\section*{My Courses}
+\begin{itemize}
+\item CSC 165 -Mathematical Expression and Reasoning for Computer Science - Francois Pitt
+\item CSC A48 - Introduction to Computer Science  II - Marzeih Ahmadzadeh
+\item MAT 137 - Calculus - Jean Baptiste Campesato
+\end{itemize}
+
+\bigskip
+\section*{Set Notation}
+
+% Fill in the following:
+\[
+S_1 \cap S_2 = \{ x \in \R  \>| \> x = 2n\> \> \> \cap \> \> \> 0 < n \leq 7 \> \> \> , \> \> n \in \N\}
+\]
+
+\bigskip
+\section*{A Truth Table}
+\bigskip
+\begin{tabular}{c c c c c c c}  % This specifies a table with 3 columns, all centred.
+
+% Table header. Notice the use of the alignment character "&" and newline "\\".
+P & Q & R & $\neg$ Q & P $\lor$ $\neg$ Q & P $\Leftrightarrow$ R &(P $\lor$ $\neg$ Q) $\Rightarrow$ (P $\Leftrightarrow$ R ) \\
+
+% Draw a horizontal line
+\hline
+
+
+% The table rows
+F & F & F & T & T & T & T \\
+F & F & T & T & T & F & F \\
+F & T & F & F & F & T & T \\
+F & T & T & F & F & F & T \\
+T & F & F & T & T & F & F \\
+T & F & T & T & T & T & T \\
+T & T & F & F & T & F & F \\
+T & T & T & F & T & T & T \\
+\end{tabular}
+
+
+
+% Note: no newline "\\" on the last line of a table.
+\newpage
+\section*{A calculation}
+\begin{align*}
+\log_x(3 \sqrt x) &= k \\
+\log (3 \sqrt x) / \log (x) &= k \\
+\log (3 \sqrt x) &= k \log(x)\\
+\log(3 \sqrt x) &= \log (x^k) \\
+3 \sqrt x &= x^k \\
+9x &= x^{2k} \\
+x/x^{2k} &= 9^{-1} \\
+x^{1-2k} &= 9^{-1} \\
+(1 - 2k) \ln x &= - \ln (9) \\
+\ln x &= \frac{-\ln 9}{1-2k} \\
+x &= e^{\frac{- \ln 9}{1-2k}} \\
+\end{align*}
+
+\end{document}
